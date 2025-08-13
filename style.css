@@ -1,0 +1,100 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f9f9f9;
+}
+
+/* Header căn giữa nội dung */
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* 👈 căn giữa ngang */
+  margin: 20px 0;
+}
+
+.logo {
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+  margin-right: 10px;
+}
+
+.site-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+/* Footer cũng căn giữa */
+.site-footer {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Grid giữ responsive */
+.app-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 16px;
+  padding: 16px;
+  max-width: calc(3 * 280px + 2 * 16px); /* Giới hạn tối đa 3 cột */
+  margin: 0 auto; /* Căn giữa */
+}
+
+/* Card giữ nguyên */
+.app-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+  cursor: pointer;
+}
+
+.app-card:hover {
+  transform: translateY(-5px);
+}
+
+.app-cover {
+  width: 100%;
+  aspect-ratio: 1024 / 500;
+  object-fit: cover;
+  display: block;
+}
+
+.app-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px;
+  min-height: 64px;
+}
+
+.app-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 10px;
+  flex-shrink: 0;
+}
+
+.app-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.app-name {
+  margin: 0 0 4px 0;
+  font-size: 1em;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.app-desc {
+  margin: 0;
+  font-size: .9em;
+  color: #666;
+  line-height: 1.2;
+}
